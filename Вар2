@@ -12,10 +12,10 @@ namespace PR_2
     {
         static void Main(string[] args)
         {
-            Console.BackgroundColor = ConsoleColor.DarkCyan;              // изменение фона консоли
-            Console.Clear();                // чистка консоли
+            Console.BackgroundColor = ConsoleColor.DarkCyan;                  // изменение фона консоли
+            Console.Clear();                                                  // чистка консоли
 
-            double x, y, z, R;              // объявление переменных
+            double x, y, z, R;                                                // объявление переменных
 
 
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
@@ -23,27 +23,27 @@ namespace PR_2
             Console.Write("Здравствуйте!");
             Console.Write("Введите координаты: ");
             Console.Write("Введите координату х: ");
-            while (! double.TryParse(Console.ReadLine(), out x))
+            while (! double.TryParse(Console.ReadLine(), out x))              // ввод х через TryParse
             {
                 Console.Write("Ошибка! Введите число заново: ");
             }
-            Console.Write("Введите координату у: ");
+            Console.Write("Введите координату у: ");                          // ввод y через TryParse
             while (!double.TryParse(Console.ReadLine(), out y))
             {
                 Console.Write("Ошибка! Введите число заново: ");
             }
-            Console.Write("Введите радиус R: ");
+            Console.Write("Введите радиус R: ");                              // ввод R через TryParse
             while (!double.TryParse(Console.ReadLine(), out R))
             {
                 Console.Write("Ошибка! Введите число заново: ");
             }
-            if (R < 0)                   //проверка радиуса круга
+            if (R < 0)                                                        //проверка радиуса круга
             {
                 Console.WriteLine("Радиус не может быть ОТРИЦАТЕЛЬНЫМ");
             } 
             else
             {
-                z = Math.Sqrt(x * x + y * y);                    // расстояние от точки до центра
+                z = Math.Sqrt(x * x + y * y);                                 // расстояние от точки до центра
                 if (z < R)
                 {
                     Console.WriteLine("Точка находится ВНУТРИ круга");
@@ -57,7 +57,7 @@ namespace PR_2
                     Console.WriteLine("Точка находится НА ГРАНИЦЕ круга");
                 }
             }
-            Console.ReadKey();
+            Console.ReadKey();                                                 // задержка консоли
         }
     }
 }
