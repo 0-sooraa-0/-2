@@ -7,7 +7,7 @@ PR_3
 
 using System;
 
-namespace PR_2
+namespace PR_3
 {
     internal class Program
     {
@@ -17,7 +17,7 @@ namespace PR_2
             Console.Clear();
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
 
-            Console.WriteLine("Практическая работа №2");
+            Console.WriteLine("Практическая работа №3");
             Console.Write("Введите координаты.\n");
             Console.Write("Введите координату х: ");
             double x = Convert.ToDouble(Console.ReadLine());
