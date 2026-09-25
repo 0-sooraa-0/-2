@@ -50,7 +50,7 @@ namespace PR_3
                     }    
                 }
             }
-            catch
+            catch (FormatException)
             {
                 
             }
