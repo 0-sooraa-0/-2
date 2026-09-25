@@ -22,7 +22,7 @@ namespace PR_2
             double x, y, z, R;                                                // объявление переменных, z - дистанция в круге
 
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("Практическая работа №2");
+            Console.WriteLine("Практическая работа №5");
             Console.Write("Введите координаты. \n");
             Console.Write("Введите координату х: ");
             x = Convert.ToDouble(Console.ReadLine());
