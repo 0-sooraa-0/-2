@@ -1,6 +1,6 @@
 PR_3
 /***********************************************************
-//* Практическая работа №3                                  *
+//* Практическая работа №6                                  *
 //* Выполнила: Старкова Е.И.                                *
 //* Задание: составить программу работы алгоритма ветвления *
 //***********************************************************/
@@ -17,37 +17,42 @@ namespace PR_3
             Console.Clear();
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
 
-            Console.WriteLine("Практическая работа №3");
+            Console.WriteLine("Практическая работа №6");
             Console.Write("Введите координаты.\n");
-            Console.Write("Введите координату х: ");
-            double x = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Введите координату y: ");
-            double y = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Введите координату R: ");
-            double R = Convert.ToDouble(Console.ReadLine());
-
-            if (R < 0)
+            try
             {
-                Console.WriteLine("Радиус не может быть ОТРИЦАТЕЛЬНЫМ.");
-            }
-            else
-            {
-                double z = Math.Sqrt(x * x + y * y);
+                Console.Write("Введите координату х: ");
+                double x = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Введите координату y: ");
+                double y = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Введите координату R: ");
+                double R = Convert.ToDouble(Console.ReadLine());
 
-                int position = Math.Sign(z - R);
-
-                switch (position)
+                if (R < 0)
                 {
-                    case -1:
-                        Console.WriteLine("Точка находится ВНУТРИ круга");
-                        break;
-                    case 0:
-                        Console.WriteLine("Точка находится НА ГРАНИЦЕ круга");
-                        break;
-                    case 1:
-                        Console.WriteLine("Точка находится ЗА ПРЕДЕЛАМИ круга");
-                        break;
+                    Console.WriteLine("Радиус не может быть ОТРИЦАТЕЛЬНЫМ.");
                 }
+                else
+                {
+                    double z = Math.Sqrt(x * x + y * y);
+                    int position = Math.Sign(z - R);
+                    switch (position)
+                    {
+                        case :
+                            Console.WriteLine("Точка находится ВНУТРИ круга");
+                            break;
+                        case :
+                            Console.WriteLine("Точка находится НА ГРАНИЦЕ круга");
+                            break;
+                        case :
+                            Console.WriteLine("Точка находится ЗА ПРЕДЕЛАМИ круга");
+                            break;
+                    }    
+                }
+            }
+            catch
+            {
+                
             }
 
             Console.ReadKey();
