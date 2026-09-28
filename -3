@@ -50,9 +50,9 @@ namespace PR_3
                     }    
                 }
             }
-            catch (FormatException)
+            catch (FormatException, fex)
             {
-                
+                Console.WriteLine("Что-то пошло не так. Введено не то число");
             }
 
             Console.ReadKey();
