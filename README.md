@@ -57,4 +57,4 @@ namespace PR_2
     }
 }
 
-[Практическая работа №5(блок схема).drawio.pdf](https://github.com/user-attachments/files/32501111/5.drawio.pdf)
+[Практическая работа №5.drawio.pdf](https://github.com/user-attachments/files/32739355/5.drawio.pdf)
