@@ -35,22 +35,23 @@ namespace PR_3
                 else
                 {
                     double z = Math.Sqrt(x * x + y * y);
+                    // Math.Sign возвращает: -1 (z < R), 0 (z == R), 1 (z > R)
                     int position = Math.Sign(z - R);
                     switch (position)
                     {
-                        case :
+                        case -1:  // было пусто, нужно -1
                             Console.WriteLine("Точка находится ВНУТРИ круга");
                             break;
-                        case :
+                        case 0:   // было пусто, нужно 0
                             Console.WriteLine("Точка находится НА ГРАНИЦЕ круга");
                             break;
-                        case :
+                        case 1:   // было пусто, нужно 1
                             Console.WriteLine("Точка находится ЗА ПРЕДЕЛАМИ круга");
                             break;
-                    }    
+                    }
                 }
             }
-            catch (FormatException, fex)
+            catch (FormatException fex)  // убрана лишняя запятая
             {
                 Console.WriteLine("Что-то пошло не так. Введено не то число");
             }
